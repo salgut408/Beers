@@ -5,6 +5,6 @@ import retrofit2.Response
 import retrofit2.http.GET
 
 interface BeerApi {
-    @GET("beer")
+    @GET("beers")
     suspend fun getAllBeers(): Response<List<BeerResponse>>
 }
