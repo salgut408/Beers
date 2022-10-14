@@ -18,7 +18,7 @@ import com.sgut.android.beerapplication.data.domainmodels.BeerDomainModel
 @Composable
 fun BeerCard(beer: BeerDomainModel, modifier: Modifier) {
     Card(shape = RoundedCornerShape(10.dp), elevation = 9.dp, modifier = modifier,) {
-        Row(modifier = Modifier.fillMaxWidth() ) {
+        Row(modifier = Modifier.fillMaxWidth(), ) {
             //image
 
             val painter = rememberAsyncImagePainter(
@@ -33,8 +33,12 @@ fun BeerCard(beer: BeerDomainModel, modifier: Modifier) {
 
 
             Column(modifier = Modifier.padding(16.dp)) {
-                Text(beer.name ?: "No Name", style = MaterialTheme.typography.h5)
-                Text(beer.tagline ?: "No Tagline")
+                Text(beer.name ?: "No Name", style = MaterialTheme.typography.h4)
+                Text(beer.tagline ?: "No Tagline", style = MaterialTheme.typography.h6)
+                Text("Pair with")
+                for(ingredient in beer.foodPairing!!){
+                    Text(ingredient ?: "No Tagline",   )
+                }
 
             }
         }
