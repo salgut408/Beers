@@ -24,11 +24,11 @@ fun BeerCard(beer: BeerDomainModel, modifier: Modifier) {
             val painter = rememberAsyncImagePainter(
                 model = ImageRequest.Builder(LocalContext.current)
                     .data(beer.imageUrl)
-                    .size(60)
-
+//                    .size(60)
+                    .crossfade(true)
                     .build()
             )
-           Image(painter = painter,contentDescription = beer.name, modifier = Modifier.size(200.dp))
+           Image(painter = painter,contentDescription = beer.name, modifier = Modifier.size(150.dp))
 
 
 
