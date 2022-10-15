@@ -5,6 +5,7 @@ import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.fillMaxSize
+import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.material.MaterialTheme
 import androidx.compose.material.Surface
 import androidx.compose.material.Text
@@ -12,7 +13,10 @@ import androidx.compose.material.TopAppBar
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
+import com.sgut.android.beerapplication.listscreen.AlignYourBeerRow
 import com.sgut.android.beerapplication.listscreen.BeerList
+import com.sgut.android.beerapplication.listscreen.MainToolBar
+import com.sgut.android.beerapplication.listscreen.SearchBar
 import com.sgut.android.beerapplication.ui.theme.BeerApplicationTheme
 import dagger.hilt.android.AndroidEntryPoint
 
@@ -27,10 +31,10 @@ class MainActivity : ComponentActivity() {
                     color = MaterialTheme.colors.background) {
                     Column(modifier = Modifier.fillMaxSize()) {
                         // 2
-                        TopAppBar(title = {
-                            Text("Beer!")
-                        })
-                   BeerList()
+                        MainToolBar()
+                        SearchBar()
+//                        BeerList()
+                        AlignYourBeerRow()
                 }
             }
         }

@@ -11,25 +11,29 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.layout.*
 import androidx.compose.material.Card
+import androidx.compose.ui.Alignment
 import coil.compose.rememberAsyncImagePainter
 import coil.request.ImageRequest
 import com.sgut.android.beerapplication.data.domainmodels.BeerDomainModel
 
 @Composable
+fun BeerCard2() {
+
+}
+
+@Composable
 fun BeerCard(beer: BeerDomainModel, modifier: Modifier) {
     Card(shape = RoundedCornerShape(10.dp), elevation = 9.dp, modifier = modifier,) {
-        Row(modifier = Modifier.fillMaxWidth(), ) {
+        Row(verticalAlignment = Alignment.CenterVertically, modifier = Modifier.fillMaxWidth(), ) {
             //image
 
             val painter = rememberAsyncImagePainter(
                 model = ImageRequest.Builder(LocalContext.current)
                     .data(beer.imageUrl)
-//                    .size(60)
                     .crossfade(true)
                     .build()
             )
            Image(painter = painter,contentDescription = beer.name, modifier = Modifier.size(150.dp))
-
 
 
             Column(modifier = Modifier.padding(16.dp)) {
