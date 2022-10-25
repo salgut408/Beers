@@ -13,6 +13,7 @@ import androidx.compose.material.TopAppBar
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
+import com.sgut.android.beerapplication.healthtrackersscreen.WellnessScreen
 import com.sgut.android.beerapplication.listscreen.*
 import com.sgut.android.beerapplication.ui.theme.BeerApplicationTheme
 import dagger.hilt.android.AndroidEntryPoint
@@ -35,6 +36,7 @@ class MainActivity : ComponentActivity() {
 //                        AlignYourBeerRow()
 //                        HomeScreen()
                         MyBeerAp()
+//                        WellnessScreen()
                 }
             }
         }
