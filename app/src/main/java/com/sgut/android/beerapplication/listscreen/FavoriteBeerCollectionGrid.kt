@@ -8,7 +8,7 @@ import androidx.compose.runtime.Composable
 
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
-//
+
 //@Composable
 //fun FacoriteBeerCollectionGrid(
 //    modifier: Modifier = Modifier
@@ -20,12 +20,12 @@ import androidx.compose.ui.unit.dp
 //        verticalArrangement = Arrangement.spacedBy(8.dp),
 //        modifier = modifier.height(120.dp)
 //    ) {
-////        items(favoriteCollectionsData) { item ->
-////            FavoriteCollectionCard(
-////                drawable = item.drawable,
-////                text = item.text,
-////                modifier = Modifier.height(56.dp)
-////            )
-////        }
+//        items(favoriteCollectionsData) { item ->
+//            FavoriteCollectionCard(
+//                drawable = item.drawable,
+//                text = item.text,
+//                modifier = Modifier.height(56.dp)
+//            )
+//        }
 //    }
 //}

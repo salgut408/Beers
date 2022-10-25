@@ -13,10 +13,7 @@ import androidx.compose.material.TopAppBar
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
-import com.sgut.android.beerapplication.listscreen.AlignYourBeerRow
-import com.sgut.android.beerapplication.listscreen.BeerList
-import com.sgut.android.beerapplication.listscreen.MainToolBar
-import com.sgut.android.beerapplication.listscreen.SearchBar
+import com.sgut.android.beerapplication.listscreen.*
 import com.sgut.android.beerapplication.ui.theme.BeerApplicationTheme
 import dagger.hilt.android.AndroidEntryPoint
 
@@ -32,9 +29,12 @@ class MainActivity : ComponentActivity() {
                     Column(modifier = Modifier.fillMaxSize()) {
                         // 2
                         MainToolBar()
-                        SearchBar()
+//                        SearchBar()
 //                        BeerList()
-                        AlignYourBeerRow()
+//                        HomeSection()
+//                        AlignYourBeerRow()
+//                        HomeScreen()
+                        MyBeerAp()
                 }
             }
         }

@@ -49,8 +49,9 @@ fun AlignYourBeerElement(
 
         )
         Text(
-            text = beer.name!!, modifier = Modifier
+            text = beer.firstBrewed!!, modifier = Modifier
                 .paddingFromBaseline(24.dp,8.dp)
+
         )
     }
 }
